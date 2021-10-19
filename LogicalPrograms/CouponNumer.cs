@@ -8,16 +8,20 @@ namespace LogicalPrograms
     {
         public static void Checking()
         {
-            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            char[] stringChars = new char[6];
-            
-            for(int i=0; i<stringChars.Length; i++)
+            //local Variable
+            int couponCodeLength = 6;
+            Console.Write("Coupon Code: ");
+
+            //If Loop Programming Construct
+            for (int i=1; i<=couponCodeLength; i++)
             {
+                //Random Predefined Class
                 Random random = new Random();
-                stringChars[i]= chars[random.Next(0,25)];
+                int codeElement = random.Next(0, 10);
+                Console.Write("{0}", codeElement);
             }
-            var couponCode = stringChars.ToString ();
-            Console.WriteLine("Coupon Code:" + couponCode);
+
+            Console.ReadLine();
         }   
     }
 }

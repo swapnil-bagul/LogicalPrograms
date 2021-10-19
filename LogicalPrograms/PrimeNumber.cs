@@ -10,9 +10,11 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Enter a Number");
             int number = Convert.ToInt32(Console.ReadLine());
+            //used flag Variable to let know certain condition has met
             int flag = 0;
             for (int i = 2; i <= number / 2; i++)
             {
+                //If loop Programming construct
                 if(number %i==0)
                 {
                     Console.WriteLine("{0} is not a Prime Number.", number);

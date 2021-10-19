@@ -11,15 +11,16 @@ namespace LogicalPrograms
             Console.Write("Enter term of series: ");
             int num = Convert.ToInt32(Console.ReadLine());
             //local variable
-            int n1 = 0, n2 = 1, n3;
-            Console.Write(n1+" "+n2+" ");
+            int num1 = 0, num2 = 1, num3;
+            Console.Write(num1+" "+num2+" ");
+
             //Programming construct
             for (int i = 2; i < num; i++) 
             {
-                n3 = n1 + n2;
-                Console.Write(n3 + " ");
-                n1 = n2;
-                n2 = n3;
+                num3 = num1 + num2;
+                Console.Write(num3 + " ");
+                num1 = num2;
+                num2 = num3;
 
             }
 

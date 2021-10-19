@@ -9,7 +9,7 @@ namespace LogicalPrograms
             Console.WriteLine("----------------------------------------------------------------------------------");
             Console.WriteLine("Welcome To Logocal Programs");
             Console.WriteLine("----------------------------------------------------------------------------------");
-            Console.WriteLine("1. Fabonacci series\n2. Prime Number\n3. Reverse Number\n4. Coupon Number\n5. Perfect Number");
+            Console.WriteLine("1. Fabonacci series\n2. Prime Number\n3. Reverse Number\n4. Coupon Number\n5. Perfect Number\n6. Stopwatch");
             Console.WriteLine("----------------------------------------------------------------------------------");
             Console.Write("Enter a Serial Number of Application: ");
             int index = Convert.ToInt32(Console.ReadLine());
@@ -33,6 +33,10 @@ namespace LogicalPrograms
 
                 case 5:
                     PerfectNumber.PerfectNumberFinding();
+                    break;
+
+                case 6:
+                    TimeMeasure.Calculating();
                     break;
 
             }
